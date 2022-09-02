@@ -21,4 +21,5 @@ select option in Hello Ping IPinfo Quit
         else [[ $option = 'Quit' ]]
             break
         fi
+    REPLY=
     done
