@@ -10,8 +10,8 @@
 import os
 
 myfile = open("myfile.txt", "w")
-L = ["Line 1 \n", "Line 2 \n", "Line 3"]
-myfile.writelines(L)
+lines = ["Line 1\n", "Line 2\n", "Line 3"]
+myfile.writelines(lines)
 myfile.close()
 
 myfile = open("myfile.txt", "a")
@@ -20,8 +20,7 @@ myfile.write("Line 4")
 myfile.close()
 
 myfile = open("myfile.txt")
-print(myfile.read())
-print()
+print(myfile.readline())
 myfile.close()
 
 os.remove("myfile.txt")
