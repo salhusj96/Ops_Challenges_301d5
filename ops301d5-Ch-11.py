@@ -14,7 +14,14 @@ L = ["Line 1 \n", "Line 2 \n", "Line 3"]
 myfile.writelines(L)
 myfile.close()
 
-myfile = open("myfile.txt", "r")
-print(myfile.read(6))
+myfile = open("myfile.txt", "a")
+myfile.write("\n")
+myfile.write("Line 4")
+myfile.close()
+
+myfile = open("ops301-oc11.txt")
+print(myfile.read())
+print()
+myfile.close()
 
 os.remove("myfile.txt")
