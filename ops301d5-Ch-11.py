@@ -19,7 +19,7 @@ myfile.write("\n")
 myfile.write("Line 4")
 myfile.close()
 
-myfile = open("ops301-oc11.txt")
+myfile = open("myfile.txt")
 print(myfile.read())
 print()
 myfile.close()
